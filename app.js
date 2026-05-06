@@ -1,4 +1,4 @@
-const apiKey = "540f5f37acb7c3268d9e5d46db11201d";
+const apiKey = "65104df2a36d09f00f7e9cf4f747a4a4";
 
 // DOM Elements
 const searchForm = document.querySelector("#search-bar");
@@ -387,13 +387,13 @@ function getUserLocation() {
 async function getWeatherByCoords(lat, lon) {
     try {
         const response = await fetch(
-            `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`
+            `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`
         );
         if (!response.ok) throw new Error("Location not found");
         const data = await response.json();
         
         const forecastResponse = await fetch(
-            `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`
+            `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`
         );
         const forecastData = await forecastResponse.json();
         
