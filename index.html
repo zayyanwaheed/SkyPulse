@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyPulse</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="animation.css">
+</head>
+<body>
+    <header>
+    <!-- Section 1 -->
+        <div class="taskbar">
+        <img  class="logo" src="logo.png"  alt="Logo">
+        <h2>SkyPulse</h2>
+        
+        <div class="location">
+            <i class="fa-solid fa-location-dot"></i>
+            San Francisco,CA
+        </div>
+        </div>
+    </header>
+    <main>
+    <!-- Hero Section     -->
+       <form id="search-bar" >
+        <input type="text" placeholder="Search for different City here ....">
+        <button class="search-btn">
+            <i  class="fa-solid fa-magnifying-glass"></i>
+        </button>
+       </form>
+    <!-- Section 3 -->
+    <div class="container">
+       <div class="temp-box">
+        <img src="sun.png" alt="Sun">
+        <div class="temp">32&deg;C</div>
+        <p>Mostly Sunny</p>
+        <div class="temp-var">
+        <p id="highest-temps">H: 40 &deg;C</p>
+        <p id="lowest-temps">L: 30 &deg;C</p>
+        </div>
+       </div>
+    </div>
+       <h2>HOURLY FORECAST</h2>
+    <div class="hourly-forecast-container">
+      <div class="hour-card">
+        <div class="time">Now</div>
+        <div class="hf-icon">
+            <img src="sun.png" alt="Sun">
+        </div>
+        <div class="hf-temp">32&deg;C</div>
+        </div>
+
+      <div class="hour-card">
+        <div class="time">2PM</div>
+        <div class="hf-icon">
+            <img src="sun.png" alt="Sun">
+        </div>
+        <div class="hf-temp">32&deg;C</div>
+        </div>
+        
+      <div class="hour-card">
+        <div class="time">4PM</div>
+        <div class="hf-icon">
+            <img src="sunny-cloud.png" alt="Sun">
+        </div>
+        <div class="hf-temp">32&deg;C</div>
+        </div>
+        
+      <div class="hour-card">
+        <div class="time">6PM</div>
+        <div class="hf-icon">
+            <img src="cloud.png" alt="Sun">
+        </div>
+        <div class="hf-temp">32&deg;C</div>
+        </div>
+      <div class="hour-card">
+        <div class="time">6:43PM</div>
+        <div class="hf-icon">
+            <img src="sunny-cloud.png" alt="Sunset">
+        </div>
+        <div class="hf-temp">32&deg;C</div>
+        </div>
+      <div class="hour-card">
+        <div class="time">8PM</div>
+        <div class="hf-icon">
+            <img src="cloud.png" alt="Sun">
+        </div>
+        <div class="hf-temp">32&deg;C</div>
+        </div>
+        
+              <div class="hour-card">
+        <div class="time">10PM</div>
+        <div class="hf-icon">
+            <img src="cloud.png" alt="Sun">
+        </div>
+        <div class="hf-temp">32&deg;C</div>
+        </div>
+              <div class="hour-card">
+        <div class="time">12AM</div>
+        <div class="hf-icon">
+            <img src="cloud.png" alt="Sun">
+        </div>
+        <div class="hf-temp">32&deg;C</div>
+        </div>
+              <div class="hour-card">
+        <div class="time">2AM</div>
+        <div class="hf-icon">
+            <img src="cloud.png" alt="Sun">
+        </div>
+        <div class="hf-temp">32&deg;C</div>
+        </div>
+              <div class="hour-card">
+        <div class="time">4AM</div>
+        <div class="hf-icon">
+            <img src="cloud.png" alt="Sun">
+        </div>
+        <div class="hf-temp">32&deg;C</div>
+        </div>
+              <div class="hour-card">
+        <div class="time">6AM</div>
+        <div class="hf-icon">
+            <img src="cloud.png" alt="Sun">
+        </div>
+        <div class="hf-temp">32&deg;C</div>
+        </div>
+              <div class="hour-card">
+        <div class="time">8AM</div>
+        <div class="hf-icon">
+            <img src="cloud.png" alt="Sun">
+        </div>
+        <div class="hf-temp">32&deg;C</div>
+        </div>
+              <div class="hour-card">
+        <div class="time">10AM</div>
+        <div class="hf-icon">
+            <img src="cloud.png" alt="Sun">
+        </div>
+        <div class="hf-temp">32&deg;C</div>
+        </div>
+              <div class="hour-card">
+        <div class="time">12PM</div>
+        <div class="hf-icon">
+            <img src="cloud.png" alt="Sun">
+        </div>
+        <div class="hf-temp">32&deg;C</div>
+        </div>
+              <div class="hour-card">
+        <div class="time">2PM</div>
+        <div class="hf-icon">
+            <img src="cloud.png" alt="Sun">
+        </div>
+        <div class="hf-temp">32&deg;C</div>
+        </div>
+    </div>
+    <!-- Section 4 -->
+    <div class="weather-cnd">
+        <div class="detail-card">
+            <p class="label">
+                <i class="fa-solid fa-droplet text-4xl text-sky-400 mb-3"></i>
+                Humidity
+            </p>
+            <p id="humidity" class="value">45%</p>
+            <p class="sub">Dew point: 58&deg;</p>
+        </div>
+        <div class="detail-card">
+            <p class="label">
+                <i class="fa-solid fa-sun"></i>
+                UV Index
+            </p>
+            <p id="uv-index" class="value">4</p>
+            <p class="sub">Moderate risk</p>
+        </div>
+        <div class="detail-card">
+           <p class="label">
+               <i class="fa-solid fa-wind"></i>
+               Wind Speed</p>
+           <p id="wind-speed" class="value">12 mph</p>
+           <p class="sub">Direction: NW</p>
+        </div>
+        <div class="detail-card">
+            <p class="label">
+                <i class="fa-solid fa-eye"></i>
+                Visibility
+            </p>
+            <p id="visibility" class="value">10 mi</p>
+            <p class="sub">Clear Sky</p>
+        </div>
+    </div>
+    <!-- Section 5 -->
+    <h2 class="section-5">5-DAYS FORECAST</h2>
+    <div class="days-forecast">
+        <div class="day-card">
+            <p class="day">Tue</p>
+            <img src="sun.png" alt="sun">
+            <p class="condition">Sunny</p>
+            <p class="temps">
+                <span >38&deg;C</span>
+                <span >33&deg;C</span>
+            </p>
+        </div>
+
+        <div class="day-card">
+            <p class="day">Wed</p>
+            <img src="sun.png" alt="sun">
+            <p class="condition">Sunny</p>
+            <p class="temps">
+                <span>37&deg;C</span>
+                <span>34&deg;C</span>
+            </p>
+        </div>
+
+        <div class="day-card">
+            <p class="day">Thurs</p>
+            <img src="sunny-cloud.png" alt="sun">
+            <p class="condition">Partly</p>
+            <p class="temps">
+                <span>30&deg;C</span>
+                <span>26&deg;C</span>
+            </p>
+        </div>
+
+        <div class="day-card">
+            <p class="day">Fri</p>
+            <img src="rain.png" alt="sun">
+            <p class="condition">Rainy</p>
+            <p class="temps">
+                <span>28&deg;C</span>
+                <span>23&deg;C</span>
+            </p>
+        </div>  
+
+        <div class="day-card">
+            <p class="day">Sat</p>
+            <img src="cloud.png" alt="sun">
+            <p class="condition">Cloudy</p>
+            <p class="temps">
+                <span>32&deg;C</span>
+                <span>28&deg;C</span>
+            </p>
+        </div>
+    </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
